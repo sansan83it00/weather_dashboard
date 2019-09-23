@@ -1,0 +1,243 @@
+@font-face {
+	font-family: "San Francisco";
+	src: url("../font/other/SF-Pro-Display-Black.otf");
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "San Francisco";
+	src: url("../font/other/SF-Pro-Display-Bold.otf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "San Francisco";
+	src: url("../font/other/SF-Pro-Display-Regular.otf");
+	font-weight: normal;
+}
+
+html {
+	--blue-color: #00b1ff;
+	--black-color: #2f373a;
+	--greydark-color: #95a4a9;
+	--grey-color: #c2d0d6;
+	--white-color: #fff;
+}
+
+html, body {
+	height: 100%;
+}
+
+* {
+	font-family: "San Francisco", sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+body > header{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+h1{
+	color: var(--blue-color);
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+
+footer{
+	margin-top: 20px;
+	color: var(--grey-color);
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.date{
+	color: var(--black-color);
+	font-weight: 700;
+}
+
+.widgets{
+	display: flex;
+	flex-direction: row;
+	margin: -10px;
+	max-width: 1000px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.widget{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	margin: 10px;
+	box-sizing: border-box;
+	border: 3px solid transparent;
+	transition: all 0.2s;
+}
+
+.widget:hover{
+	border: 3px solid var(--greydark-color);
+	border-radius: 5px;
+}
+
+.icon-widget{
+	font-size: 72px;
+	color: var(--black-color);
+}
+.city-widget{
+	margin-top: 30px;
+	color: var(--black-color);
+}
+
+.temp-widget{
+	color: var(--grey-color);
+	margin-top: 10px;
+}
+
+.big-space{
+	height: 60px;
+}
+
+.icon_button-secondary{
+	width: 20px;
+	margin-right: 10px;
+	color: var(--grey-color);
+}
+
+.button-secondary{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: 2px solid var(--grey-color);
+	background-color: transparent;
+	cursor: pointer;
+	color: var(--black-color);
+}
+
+
+.icon_button-primary{
+	width: 25px;
+	margin-left: 10px;
+	color: var(--white-color);
+}
+
+.button-primary{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: 2px solid var(--blue-color);
+	background-color: var(--blue-color);
+	cursor: pointer;
+	color: var(--white-color);
+}
+
+button > span{
+	font-weight: 700;
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.block-settings{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	width: 400px;
+}
+
+form fieldset {
+	border: none;
+}
+
+table{
+	width: 100%
+}
+
+input[type=text]{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: 2px solid var(--grey-color);
+	background-color: transparent;
+	cursor: pointer;
+	color: var(--black-color);
+	font-size: 16px;
+}
+
+input[type=text]::placeholder{
+	color: var(--greydark-color);
+}
+
+.header-table{
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	margin-left: -32px;
+	margin-bottom: 40px;
+}
+
+.header-table img{
+	margin-right: 10px;
+}
+
+.aligned-table{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.aligned-table > *:first-child{
+	flex: 1;
+	box-sizing: border-box;
+}
+
+.aligned-table > input[type=text]{
+	margin-left: -17px;
+}
+
+.button-delete{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.aligned-table > button {
+	margin-left: 10px;
+}
+
+.button-add{
+	padding: 7px 15px;
+}
