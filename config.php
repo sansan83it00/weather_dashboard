@@ -1,5 +1,5 @@
 <?php
-define("HOST","localhost");
-define("DBNAME","weather");
-define("USERNAME","root");
-define("PASSWORD","");
+define("HOST","mysql-sandrinepizzimenti.alwaysdata.net");
+define("DBNAME","sandrinepizzimenti_weatherdashboard");
+define("USERNAME","190594");
+define("PASSWORD","lausantho");
